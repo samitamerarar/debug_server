@@ -7,7 +7,7 @@ function App() {
 
   const fetchLogData = async () => {
     try {
-      const response = await fetch("http://localhost:3150/api/log");
+      const response = await fetch("http://3.97.156.176:3150/api/log");
       if (response.ok) {
         const data = await response.json();
         setLogData(data);
@@ -21,7 +21,7 @@ function App() {
 
   const handleClearOutput = async () => {
     try {
-      const response = await fetch("http://localhost:3150/api/clear", {
+      const response = await fetch("http://3.97.156.176:3150/api/clear", {
         method: "POST",
       });
 
