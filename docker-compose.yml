@@ -1,0 +1,13 @@
+version: "3"
+services:
+  react-app:
+    build:
+      context: ./react-app
+    ports:
+      - "3149:3149"
+
+  server:
+    build:
+      context: ./server
+    ports:
+      - "3150:3150"
